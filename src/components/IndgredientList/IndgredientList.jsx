@@ -6,10 +6,21 @@ const IndgredientList = (props) => {
             <h2> Ingredient List</h2>
             <div>
                 {props.ingredients.map((ingredient, idx) => (
-                    <Ingredient key={idx} isList={true} ingredient={ingredient}/>
+                    <Ingredient 
+                    key={idx} 
+                    isList={true} 
+                    ingredient={ingredient}
+                    addToBurger = {props.addToBurger}
+                    />
+                     
+                        
+
+
                 ))}
 
             </div>
+
+
         </>
     );
 }
