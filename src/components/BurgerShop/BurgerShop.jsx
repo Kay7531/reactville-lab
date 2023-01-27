@@ -1,14 +1,14 @@
 import { useState } from "react";
 import IndgredientList from "../IndgredientList/IndgredientList";
 import BurgerStack from "../BurgerStack/BurgerStack";
-import Ingredient from "../Indgredient/Indgredient";
+import { ingredients } from "../../data/burger-data";
 
 
 
 
 
 const BurgerShop = (props) => {
-    const ingredients=["Beef Patty", "Soy Patty", "Black Bean Patty","Chicken Patty", "Lettuce", "Tomato", "Bacon", "Onion", "Cheddar Cheese", "Swiss Cheese", "Kaiser Bun", "Sesame Bun", "Gluten Free Bun", "Lettuce Wrap"]
+    
 
     const [stack, setStack] = useState([])
 
