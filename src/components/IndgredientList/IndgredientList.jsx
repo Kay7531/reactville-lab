@@ -1,14 +1,15 @@
-import Indgredient from "../Indgredient/Indgredient";
+import Ingredient from "../Indgredient/Indgredient";
 
 const IndgredientList = (props) => {
     return (
         <>
-        <h2> Ingredient List</h2>
-        <ul>
-            {props.ingredients.map((ingredient,idx) =>(
-                <div key={idx} >{ingredient}</div>
-            ))}
-        </ul>
+            <h2> Ingredient List</h2>
+            <div>
+                {props.ingredients.map((ingredient, idx) => (
+                    <Ingredient key={idx} isList={true} ingredient={ingredient}/>
+                ))}
+
+            </div>
         </>
     );
 }

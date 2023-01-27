@@ -11,13 +11,17 @@ const BurgerShop = () => {
 
     const [stack, setStack] = useState([])
 
+    const addToBurger = (ingredient) => {
+        setStack([...stack, ingredient])
+      }
+
     
     return (
         <>
         <section>
             <h1>BurgerShop</h1>
-            <IndgredientList ingredients={ingredients}/>
-            <BurgerStack stack={stack}/>
+            <IndgredientList ingredients={ingredients} addToBurger={addToBurger}/>
+            <BurgerStack stack={stack} />
         </section>
         </>
     );
